@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css" />
-    <script src="./src/app.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>MyFrontEnd</title>
 </head>
@@ -26,8 +27,9 @@
     </nav>
 
     <!--Welcome Text{ and information container?? }-->
-    <div id="app-alert" class="container-fluid flex justify-center">
+    <div id="app-alert" class="container-fluid flex justify-center flex flex-col">
         <h1 class="text-3xl text-center">THIS IS MY VANILLA FRONTEND</h1>
+        <div class="text-center" id="status"></div>
     </div>
 
     <!--{{ RENDER BODY }}-->
@@ -121,6 +123,10 @@
             <a class=" font-semibold" href="https://www.timothyjones.dev/">Tim Jones</a>
         </div>
     </footer>
+
+    <!--APP SCRIPTS {scripts that manage the app must run AFTER the page loads}-->
+    <script src="./src/app.js"></script>
+
 
 </body>
 </html>
