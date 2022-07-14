@@ -14,3 +14,10 @@ async function getBlogs() {
       return response.json();
    });
 }
+
+
+//HttpPOST
+async function AddBlogPost(AddBlogModel){
+
+}
+
